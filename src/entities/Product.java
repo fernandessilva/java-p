@@ -16,7 +16,13 @@ public class Product {
         this.quantity -= quantity;
     }
 
-//    public String textOutputs(){
-//        return name + ", $ " + String.f
-//    }
+    public String toString(){
+        return name
+        + ", $ "
+                + String.format("%.2f", price)
+                + ", "
+                + String.format("%d", quantity)
+                + " units, Total: $ "
+                + String.format("%.2f%n", totalValueInStock());
+    }
 }

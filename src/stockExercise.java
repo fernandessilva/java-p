@@ -19,27 +19,17 @@ public class stockExercise {
         System.out.print("Quantity in stock: ");
         product.quantity = sc.nextInt();
         product.totalValueInStock();
-        System.out.print("Product data: " + product.name);
-        System.out.printf(", $ %.2f, ",  product.price);
-        System.out.print(product.quantity  + " units, ");
-        System.out.printf("Total: $ %.2f%n", product.totalValueInStock());
+        System.out.print("Product data: " + product + "\n");
 
-        System.out.println("Enter the number of products to be added in stock: ");
+        System.out.print("Enter the number of products to be added in stock: ");
         int quantity = sc.nextInt();
         product.addProducts(quantity);
-        System.out.print("Updated data: " + product.name);
-        System.out.printf(", $ %.2f, ",  product.price);
-        System.out.print(product.quantity  + " units, ");
-        System.out.printf("Total: $ %.2f%n", product.totalValueInStock());
+        System.out.println("Updated data: " + product);
 
-        System.out.println("Enter the number of products to be removed from stock: ");
+        System.out.print("Enter the number of products to be removed from stock: ");
         quantity = sc.nextInt();
         product.removeProducts(quantity);
-        System.out.print("Updated data: " + product.name);
-        System.out.printf(", $ %.2f, ",  product.price);
-        System.out.print(product.quantity  + " units, ");
-        System.out.printf("Total: $ %.2f%n", product.totalValueInStock());
+        System.out.print("Updated data: " + product);
 
     }
-
 }
